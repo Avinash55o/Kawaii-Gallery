@@ -1,1 +1,8 @@
 @import 'tailwindcss';
+
+@theme{
+    --color-lavender: #C1BFFF;
+    --color-skin: #FDFBD4;
+    --color-purple: #CF6DFC;
+    --color-forestGreen: #BDB96A;
+}

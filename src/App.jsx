@@ -4,17 +4,17 @@ import Image_gallery from "./components/image_gallery";
 
 function App() {
   return (
-    <>
-      <div className="bg-pink-100 p-4 h-screen">
-        <div className="flex flex-1/3  ">
-          <h1 className="font-bold text-orange-500">Kawaii Gallery</h1>
-          <div className="items-center justify-center m-auto">
+
+      <div className=" bg-lavender h-screen">
+        <div className="flex flex-row bg-skin p-4 justify-between items-center">
+          <h1 className="font-bold text-purple w-[20%]">Kawaii Gallery</h1>
+          <div className="w-[80%] p-auto ">
             <SearchBar />
           </div>
         </div>
         <Image_gallery />
       </div>
-    </>
+
   );
 }
 
