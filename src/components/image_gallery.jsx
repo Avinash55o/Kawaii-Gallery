@@ -2,8 +2,7 @@ import data from "../data/image_characters.jsx";
 import Imagecard from "./image_card";
 import { useState } from "react";
 
-function Image_gallery({images}) {
-  const [currentPage, setCurrentPage] = useState(1);
+function Image_gallery({images,currentPage,setCurrentPage}) {
   const itemsperpage = 8;
 
   const indexoflastitem = currentPage * itemsperpage;

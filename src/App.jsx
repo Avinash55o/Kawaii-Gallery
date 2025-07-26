@@ -5,6 +5,7 @@ import Image_gallery from "./components/image_gallery";
 import data from "./data/image_characters.jsx";
 
 function App() {
+  const [currentPage, setCurrentPage]= useState(1)
   const [search, setsearch]=useState("");
   const [filterData, setfilterData]=useState(data);
   
@@ -14,7 +15,8 @@ function App() {
   }
   useEffect(()=>{
     const filterdata=data.filter((item)=>item.name.toLowerCase().includes(search))
-    setfilterData(filterdata)
+    setfilterData(filterdata);
+    setCurrentPage(1);
   },[search])
   return (
 
@@ -29,7 +31,10 @@ function App() {
           </div>
         </div>
         <Image_gallery 
-        images={filterData}/>
+        images={filterData}
+        currentPage={currentPage}
+        setCurrentPage={setCurrentPage}
+        />
       </div>
 
   );

@@ -8,8 +8,7 @@ const SearchBar = ({ setsearchquery,searchquery }) => {
         className="border-2 border-lavender bg-purple-50 rounded-2xl p-2 text-center"
         type="text"
         placeholder="search kawaii characters"
-      />
-      
+      /> 
     </div>
   );
 };
