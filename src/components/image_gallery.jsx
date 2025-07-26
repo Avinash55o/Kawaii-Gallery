@@ -1,6 +1,6 @@
 import data from "../data/image_characters.jsx";
 import Imagecard from "./image_card";
-import { useState } from "react";
+
 
 function Image_gallery({images,currentPage,setCurrentPage}) {
   const itemsperpage = 8;
