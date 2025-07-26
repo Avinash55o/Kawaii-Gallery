@@ -20,7 +20,7 @@ Insert gif or link to demo
 1. Clone the repository:
 
 ```bash
-  git clone <your-repo-url>
+  git clone https://github.com/Avinash55o/Kawaii-Gallery.git
    cd KawaiiGallery
 ```
 2. Install dependencies:
