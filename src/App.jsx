@@ -7,7 +7,7 @@ function App() {
 
       <div className=" bg-lavender h-screen">
         <div className="flex flex-row bg-skin p-4 justify-between items-center">
-          <h1 className="font-bold text-purple w-[20%]">Kawaii Gallery</h1>
+          <h1 className="font-bold text-purple text-shadow-violet-200 w-[20%] text-shadow-lg text-2xl">Kawaii Gallery</h1>
           <div className="w-[80%] p-auto ">
             <SearchBar />
           </div>
