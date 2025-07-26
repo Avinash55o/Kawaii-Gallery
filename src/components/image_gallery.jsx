@@ -2,13 +2,13 @@ import data from "../data/image_characters.jsx";
 import Imagecard from "./image_card";
 import { useState } from "react";
 
-function Image_gallery() {
+function Image_gallery({images}) {
   const [currentPage, setCurrentPage] = useState(1);
   const itemsperpage = 8;
 
   const indexoflastitem = currentPage * itemsperpage;
   const indexoffirstitem = indexoflastitem - itemsperpage;
-  const currentitems = data.slice(indexoffirstitem, indexoflastitem);
+  const currentitems = images.slice(indexoffirstitem, indexoflastitem);
 
   //total number of pages
   const totalpages = Math.ceil(data.length / itemsperpage);
